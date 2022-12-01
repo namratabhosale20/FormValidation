@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="FormValidation.css">
+</head>
+<body>
+    <div class="container">
+    <form action="">
+        <div class="form">
+            <label for="name">Name</label>
+            <input type="text" placeholder="xyz" id="contact-name" onkeyup="ValidateName()">
+            <!-- <span id="name-error">Name is required</span> -->
+            <!-- <i class="fa fa-check" aria-hidden="true"></i> -->
+            <span id="name-error"></span>
+        </div>
+        <div class="form">
+            <label for="email">Email</label>
+            <input type="email" placeholder="xyz@gmail.com" id="contact-email" onkeyup="Validateemail()">
+            <span id= "email-error"></span>
+        </div>
+        <div class="form">
+            <label for="mobileno">Mobile No</label>
+            <input type="tel" placeholder="123443" id="contact-mobile" onkeyup="Validatemobile()">
+            <!-- <span id="mobile-error">Mobile no is required</span> -->
+            <!-- <i class="fa fa-check" aria-hidden="true"></i> -->
+            <span id="mobile-error"></span>
+        </div>
+        <div class="form">
+            <label for="password">Password</label>
+            <input type="password" placeholder="*****" id="contact-password" onkeyup="Validatepassword()">
+            <!-- <span id="pwd-error">password is required</span> -->
+            <!-- <i class="fa fa-check" aria-hidden="true"></i> -->
+            <span id="pwd-error"></span>
+        </div>
+        <button onclick=" return ValidateForm()">Submit</button>
+        <!-- <span id="submit-error">Please fix error</span> -->
+        <span id="submit-error"></span>
+    </form>
+</div>
+<script src="FormValidation.js"></script>
+</body>
+</html>
